@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediStock - Suppliers</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <span>✚</span>
+
+                MediStock
+
+            </div>
+
+
+            <nav>
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="medicines.html">
+                    💊 Medicines
+                </a>
+
+                <a href="stock.html">
+                    📦 Stock
+                </a>
+
+                <a href="billing.html">
+                    🧾 Billing
+                </a>
+
+                <a href="customers.html">
+                    👥 Customers
+                </a>
+
+                <a href="suppliers.html" class="active">
+                    🚚 Suppliers
+                </a>
+
+                <a href="reports.html">
+                    📊 Reports
+                </a>
+
+            </nav>
+
+
+            <a href="login.html" class="logout">
+                🚪 Logout
+            </a>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+
+            <!-- TOP BAR -->
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+                        Suppliers
+                    </h1>
+
+                    <p>
+                        Manage pharmacy supplier information
+                    </p>
+
+                </div>
+
+
+                <div class="user-profile">
+                    👤 Admin
+                </div>
+
+            </header>
+
+
+            <!-- SUPPLIER SECTION -->
+
+            <section class="supplier-container">
+
+
+                <!-- ADD SUPPLIER -->
+
+                <div class="supplier-form">
+
+                    <h2>
+                        🚚 Add New Supplier
+                    </h2>
+
+                    <p class="supplier-description">
+                        Enter supplier details below.
+                    </p>
+
+
+                    <label for="supplierName">
+                        Supplier Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="supplierName"
+                        placeholder="Enter supplier name"
+                    >
+
+
+                    <label for="supplierPhone">
+                        Mobile Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="supplierPhone"
+                        placeholder="Enter mobile number"
+                        maxlength="10"
+                    >
+
+
+                    <label for="supplierEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="supplierEmail"
+                        placeholder="Enter email address"
+                    >
+
+
+                    <label for="supplierCompany">
+                        Company Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="supplierCompany"
+                        placeholder="Enter company name"
+                    >
+
+
+                    <label for="supplierAddress">
+                        Address
+                    </label>
+
+                    <textarea
+                        id="supplierAddress"
+                        placeholder="Enter supplier address"
+                        rows="4"
+                    ></textarea>
+
+
+                    <button
+                        type="button"
+                        class="supplier-add-button"
+                        id="addSupplierButton">
+
+                        Add Supplier
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="supplier-cancel-button"
+                        id="cancelSupplierButton">
+
+                        Clear
+
+                    </button>
+
+                </div>
+
+
+                <!-- SUPPLIER LIST -->
+
+                <div class="supplier-list">
+
+                    <div class="supplier-list-header">
+
+                        <div>
+
+                            <h2>
+                                🚚 Supplier List
+                            </h2>
+
+                            <p>
+                                Saved suppliers will appear here.
+                            </p>
+
+                        </div>
+
+
+                        <span
+                            class="supplier-count"
+                            id="supplierCount">
+
+                            0 Suppliers
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- TABLE -->
+
+                    <div class="supplier-table-container">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Supplier Name
+                                    </th>
+
+                                    <th>
+                                        Mobile
+                                    </th>
+
+                                    <th>
+                                        Email
+                                    </th>
+
+                                    <th>
+                                        Company
+                                    </th>
+
+                                    <th>
+                                        Address
+                                    </th>
+
+                                    <th>
+                                        Action
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="supplierTableBody">
+
+                                <tr id="emptySupplierRow">
+
+                                    <td colspan="6">
+                                        No suppliers added yet.
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

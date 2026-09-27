@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediStock - Customers</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <span>✚</span>
+
+                MediStock
+
+            </div>
+
+
+            <nav>
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="medicines.html">
+                    💊 Medicines
+                </a>
+
+                <a href="stock.html">
+                    📦 Stock
+                </a>
+
+                <a href="billing.html">
+                    🧾 Billing
+                </a>
+
+                <a href="customers.html" class="active">
+                    👥 Customers
+                </a>
+
+                <a href="suppliers.html">
+                    🚚 Suppliers
+                </a>
+
+                <a href="reports.html">
+                    📊 Reports
+                </a>
+
+            </nav>
+
+
+            <a href="login.html" class="logout">
+                🚪 Logout
+            </a>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+
+            <!-- TOP BAR -->
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+                        Customers
+                    </h1>
+
+                    <p>
+                        Manage pharmacy customer information
+                    </p>
+
+                </div>
+
+
+                <div class="user-profile">
+                    👤 Admin
+                </div>
+
+            </header>
+
+
+            <!-- CUSTOMER SECTION -->
+
+            <section class="customer-container">
+
+
+                <!-- ADD CUSTOMER -->
+
+                <div class="customer-form">
+
+                    <h2>
+                        👤 Add New Customer
+                    </h2>
+
+                    <p class="customer-description">
+                        Enter customer details below.
+                    </p>
+
+
+                    <label for="customerName">
+                        Customer Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Enter customer name"
+                    >
+
+
+                    <label for="customerPhone">
+                        Mobile Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="customerPhone"
+                        placeholder="Enter mobile number"
+                        maxlength="10"
+                    >
+
+
+                    <label for="customerEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="customerEmail"
+                        placeholder="Enter email address"
+                    >
+
+
+                    <label for="customerAddress">
+                        Address
+                    </label>
+
+                    <textarea
+                        id="customerAddress"
+                        placeholder="Enter customer address"
+                        rows="4"
+                    ></textarea>
+
+
+                    <button
+                        type="button"
+                        class="customer-add-button"
+                        id="addCustomerButton">
+
+                        Add Customer
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="customer-cancel-button"
+                        id="cancelCustomerButton">
+
+                        Clear
+
+                    </button>
+
+                </div>
+
+
+                <!-- CUSTOMER LIST -->
+
+                <div class="customer-list">
+
+                    <div class="customer-list-header">
+
+                        <div>
+
+                            <h2>
+                                👥 Customer List
+                            </h2>
+
+                            <p>
+                                Saved customers will appear here.
+                            </p>
+
+                        </div>
+
+
+                        <span
+                            class="customer-count"
+                            id="customerCount">
+
+                            0 Customers
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- TABLE -->
+
+                    <div class="customer-table-container">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Name
+                                    </th>
+
+                                    <th>
+                                        Mobile
+                                    </th>
+
+                                    <th>
+                                        Email
+                                    </th>
+
+                                    <th>
+                                        Address
+                                    </th>
+
+                                    <th>
+                                        Action
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="customerTableBody">
+
+                                <tr id="emptyCustomerRow">
+
+                                    <td colspan="5">
+                                        No customers added yet.
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

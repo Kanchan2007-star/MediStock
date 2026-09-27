@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediStock - Medicines</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+                <span>✚</span>
+                MediStock
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="medicines.html" class="active">
+                    💊 Medicines
+                </a>
+
+                <a href="stock.html">
+                    📦 Stock
+                </a>
+
+                <a href="billing.html">
+                    🧾 Billing
+                </a>
+
+                <a href="customers.html">
+                    👥 Customers
+                </a>
+
+                <a href="suppliers.html">
+                    🚚 Suppliers
+                </a>
+
+                <a href="reports.html">
+                    📊 Reports
+                </a>
+
+            </nav>
+
+            <a href="login.html" class="logout">
+                🚪 Logout
+            </a>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <!-- Top Bar -->
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Medicines</h1>
+
+                    <p>
+                        Manage your pharmacy medicines
+                    </p>
+
+                </div>
+
+                <div class="user-profile">
+                    👤 Admin
+                </div>
+
+            </header>
+
+
+            <!-- Add Medicine Form -->
+
+            <section class="medicine-form">
+
+                <h2>➕ Add New Medicine</h2>
+
+
+                <div class="medicine-grid">
+
+
+                    <div class="medicine-field">
+
+                        <label for="medicineName">
+                            Medicine Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="medicineName"
+                            placeholder="Enter medicine name"
+                        >
+
+                    </div>
+
+
+                    <div class="medicine-field">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category">
+
+                            <option value="">
+                                Select category
+                            </option>
+
+                            <option>Tablets</option>
+
+                            <option>Capsules</option>
+
+                            <option>Syrup</option>
+
+                            <option>Injection</option>
+
+                            <option>Cream</option>
+
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="medicine-field">
+
+                        <label for="price">
+                            Price
+                        </label>
+
+                        <input
+                            type="number"
+                            id="price"
+                            placeholder="Enter price"
+                        >
+
+                    </div>
+
+
+                    <div class="medicine-field">
+
+                        <label for="quantity">
+                            Quantity
+                        </label>
+
+                        <input
+                            type="number"
+                            id="quantity"
+                            placeholder="Enter quantity"
+                        >
+
+                    </div>
+
+
+                    <div class="medicine-field">
+
+                        <label for="expiry">
+                            Expiry Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="expiry"
+                        >
+
+                    </div>
+
+
+                    <div class="medicine-field">
+
+                        <label for="batch">
+                            Batch Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="batch"
+                            placeholder="Enter batch number"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="medicine-actions">
+
+                    <button
+                        type="button"
+                        class="medicine-add-button">
+
+                        Add Medicine
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="medicine-cancel-button">
+
+                        Cancel
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Medicine List -->
+
+            <section class="medicine-list">
+
+                <div class="medicine-list-header">
+
+                    <div>
+
+                        <h2>Medicine List</h2>
+
+                        <p>
+                            Added medicines will appear here
+                        </p>
+
+                    </div>
+
+                    <div class="medicine-count">
+                        0 Medicines
+                    </div>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Medicine</th>
+
+                                <th>Category</th>
+
+                                <th>Price</th>
+
+                                <th>Quantity</th>
+
+                                <th>Expiry</th>
+
+                                <th>Batch</th>
+
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="medicineTableBody">
+
+                            <tr id="emptyRow">
+
+                                <td colspan="7">
+
+                                    No medicines added yet.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

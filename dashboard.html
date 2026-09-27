@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediStock - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+                <span>✚</span>
+                MediStock
+            </div>
+
+
+            <nav>
+
+                <a href="dashboard.html" class="active">
+                    🏠 Dashboard
+                </a>
+
+                <a href="medicines.html">
+                    💊 Medicines
+                </a>
+
+                <a href="stock.html">
+                    📦 Stock
+                </a>
+
+                <a href="billing.html">
+                    🧾 Billing
+                </a>
+
+                <a href="customers.html">
+                    👥 Customers
+                </a>
+
+                <a href="suppliers.html">
+                    🚚 Suppliers
+                </a>
+
+                <a href="reports.html">
+                    📊 Reports
+                </a>
+
+            </nav>
+
+
+            <a href="login.html" class="logout">
+                🚪 Logout
+            </a>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+
+            <!-- Top Bar -->
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Dashboard</h1>
+
+                    <p>
+                        Welcome to MediStock Pharmacy Management System
+                    </p>
+
+                </div>
+
+
+                <div class="user-profile">
+                    👤 Admin
+                </div>
+
+            </header>
+
+
+            <!-- Dashboard Cards -->
+
+            <section class="dashboard-cards">
+
+
+                <!-- Total Medicines -->
+
+                <a
+                    href="medicines.html"
+                    class="dashboard-card dashboard-card-link">
+
+                    <div class="card-icon">
+                        💊
+                    </div>
+
+                    <h3>
+                        Total Medicines
+                    </h3>
+
+                    <p id="dashboardMedicineCount">
+                        0
+                    </p>
+
+                </a>
+
+
+                <!-- Available Stock -->
+
+                <a
+                    href="stock.html"
+                    class="dashboard-card dashboard-card-link">
+
+                    <div class="card-icon">
+                        📦
+                    </div>
+
+                    <h3>
+                        Available Stock
+                    </h3>
+
+                    <p id="dashboardStockCount">
+                        0
+                    </p>
+
+                </a>
+
+
+                <!-- Total Sales -->
+
+                <a
+                    href="billing.html"
+                    class="dashboard-card dashboard-card-link">
+
+                    <div class="card-icon">
+                        🧾
+                    </div>
+
+                    <h3>
+                        Total Sales
+                    </h3>
+
+                    <p id="dashboardTotalSales">
+                        ₹0
+                    </p>
+
+                </a>
+
+
+                <!-- Low Stock -->
+
+                <a
+                    href="stock.html"
+                    class="dashboard-card dashboard-card-link">
+
+                    <div class="card-icon">
+                        ⚠️
+                    </div>
+
+                    <h3>
+                        Low Stock
+                    </h3>
+
+                    <p id="dashboardLowStock">
+                        0
+                    </p>
+
+                </a>
+
+
+            </section>
+
+
+            <!-- Welcome Section -->
+
+            <section class="welcome-section">
+
+                <h2>
+                    Welcome to MediStock 💚
+                </h2>
+
+                <p>
+                    Manage medicines, stock, billing, customers,
+                    suppliers and reports from one place.
+                </p>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

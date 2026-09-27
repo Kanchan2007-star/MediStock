@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediStock - Stock</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+                <span>✚</span>
+                MediStock
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="medicines.html">
+                    💊 Medicines
+                </a>
+
+                <a href="stock.html" class="active">
+                    📦 Stock
+                </a>
+
+                <a href="billing.html">
+                    🧾 Billing
+                </a>
+
+                <a href="customers.html">
+                    👥 Customers
+                </a>
+
+                <a href="suppliers.html">
+                    🚚 Suppliers
+                </a>
+
+                <a href="reports.html">
+                    📊 Reports
+                </a>
+
+            </nav>
+
+            <a href="login.html" class="logout">
+                🚪 Logout
+            </a>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <!-- Top Bar -->
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Stock Management</h1>
+
+                    <p>
+                        Monitor and manage pharmacy stock
+                    </p>
+
+                </div>
+
+                <div class="user-profile">
+                    👤 Admin
+                </div>
+
+            </header>
+
+
+            <!-- Stock Summary -->
+
+            <section class="dashboard-cards">
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">📦</div>
+
+                    <h3>Total Stock Items</h3>
+
+                    <p>0</p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">✅</div>
+
+                    <h3>Available Stock</h3>
+
+                    <p>0</p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">⚠️</div>
+
+                    <h3>Low Stock</h3>
+
+                    <p>0</p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-icon">❌</div>
+
+                    <h3>Out of Stock</h3>
+
+                    <p>0</p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Stock Table -->
+
+            <section class="medicine-list">
+
+                <div class="medicine-list-header">
+
+                    <div>
+
+                        <h2>📦 Stock Details</h2>
+
+                        <p>
+                            Current medicine stock information
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Medicine</th>
+
+                                <th>Category</th>
+
+                                <th>Quantity</th>
+
+                                <th>Price</th>
+
+                                <th>Expiry</th>
+
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td colspan="6">
+                                    No stock information available.
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

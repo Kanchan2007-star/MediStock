@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediStock - Reports</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <span>✚</span>
+
+                MediStock
+
+            </div>
+
+
+            <nav>
+
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="medicines.html">
+                    💊 Medicines
+                </a>
+
+                <a href="stock.html">
+                    📦 Stock
+                </a>
+
+                <a href="billing.html">
+                    🧾 Billing
+                </a>
+
+                <a href="customers.html">
+                    👥 Customers
+                </a>
+
+                <a href="suppliers.html">
+                    🚚 Suppliers
+                </a>
+
+                <a href="reports.html" class="active">
+                    📊 Reports
+                </a>
+
+            </nav>
+
+
+            <a href="login.html" class="logout">
+                🚪 Logout
+            </a>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+
+            <!-- TOP BAR -->
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>
+                        Reports
+                    </h1>
+
+                    <p>
+                        View pharmacy management reports
+                    </p>
+
+                </div>
+
+
+                <div class="user-profile">
+                    👤 Admin
+                </div>
+
+            </header>
+
+
+            <!-- REPORT CARDS -->
+
+            <section class="report-cards">
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">
+                        💊
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Total Medicines
+                        </h3>
+
+                        <p id="reportMedicineCount">
+                            0
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">
+                        📦
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Total Stock
+                        </h3>
+
+                        <p id="reportStockCount">
+                            0
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">
+                        👥
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Customers
+                        </h3>
+
+                        <p id="reportCustomerCount">
+                            0
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-card">
+
+                    <div class="report-icon">
+                        🚚
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Suppliers
+                        </h3>
+
+                        <p id="reportSupplierCount">
+                            0
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- REPORT INFORMATION -->
+
+            <section class="report-section">
+
+                <h2>
+                    📊 Pharmacy Summary
+                </h2>
+
+                <p>
+                    This section provides a quick summary of the
+                    pharmacy management system.
+                </p>
+
+
+                <div class="report-summary">
+                    <h2>Low Stock Medicines</h2>
+
+                <div id="lowStockList" class="low-stock-list">
+                    <p>No low stock medicines.</p>
+
+                
+                </div>
+            </div>
+
+                    <div class="summary-item">
+
+                        <span>
+                            Medicine Records
+                        </span>
+
+                        <strong id="summaryMedicines">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            Customer Records
+                        </span>
+
+                        <strong id="summaryCustomers">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            Supplier Records
+                        </span>
+
+                        <strong id="summarySuppliers">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-item">
+
+                        <span>
+                            Low Stock Medicines
+                        </span>
+
+                        <strong id="summaryLowStock">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- INFORMATION BOX -->
+
+            <section class="report-info">
+
+                <h2>
+                    💡 About Reports
+                </h2>
+
+                <p>
+                    Reports help the pharmacy administrator
+                    monitor medicines, stock, customers and
+                    suppliers in one place.
+                </p>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
