@@ -5,7 +5,7 @@ MediStock is a web-based Pharmacy Management System designed to help manage medi
 ## 🌐 Live Website
 
 Visit the live MediStock website through GitHub Pages.
-
+🔗 **Live Website:** https://kanchan2007-star.github.io/MediStock/
 ## 📌 Project Features
 
 - 🔐 Login and Logout
